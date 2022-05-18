@@ -1,0 +1,496 @@
+-- Instances:
+
+local GUITemplate = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local Hide = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local SideBar = Instance.new("ScrollingFrame")
+local Home = Instance.new("TextButton")
+local ListLayout = Instance.new("UIListLayout")
+local Hub = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local Pages = Instance.new("Frame")
+local Home_2 = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local Hub_2 = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local FlyScript = Instance.new("TextButton")
+local Title_3 = Instance.new("TextLabel")
+local Settings_2 = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+
+--Properties:
+
+GUITemplate.Name = "GUITemplate"
+GUITemplate.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GUITemplate.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GUITemplate.DisplayOrder = 999999999
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = GUITemplate
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 0.100
+MainFrame.BorderColor3 = Color3.fromRGB(0, 255, 17)
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Position = UDim2.new(0.355693102, 0, 0.29140684, 0)
+MainFrame.Selectable = true
+MainFrame.Size = UDim2.new(0, 312, 0, 208)
+MainFrame.ZIndex = 999999998
+
+TopBar.Name = "TopBar"
+TopBar.Parent = MainFrame
+TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.BorderColor3 = Color3.fromRGB(255, 0, 4)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(-0.000217975714, 0, -0.000925724336, 0)
+TopBar.Size = UDim2.new(1.00021803, 0, 0.138999999, 0)
+TopBar.SizeConstraint = Enum.SizeConstraint.RelativeXX
+TopBar.ZIndex = 999999999
+
+Title.Name = "Title"
+Title.Parent = TopBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0590022951, 0, 0.0730946362, 0)
+Title.Size = UDim2.new(0.700000167, 0, 0.80769223, 0)
+Title.ZIndex = 999999999
+Title.Font = Enum.Font.SourceSansLight
+Title.Text = "Cash Central"
+Title.TextColor3 = Color3.fromRGB(0, 255, 21)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Exit.Name = "Exit"
+Exit.Parent = TopBar
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.BackgroundTransparency = 0.900
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.906853557, 0, 0.254250169, 0)
+Exit.Size = UDim2.new(0, 20, 0, 20)
+Exit.ZIndex = 999999999
+Exit.Font = Enum.Font.Ubuntu
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 255, 21)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+Hide.Name = "Hide"
+Hide.Parent = TopBar
+Hide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hide.BackgroundTransparency = 0.900
+Hide.BorderSizePixel = 0
+Hide.Position = UDim2.new(0.820333958, 0, 0.254250169, 0)
+Hide.Size = UDim2.new(0, 20, 0, 20)
+Hide.ZIndex = 999999999
+Hide.Font = Enum.Font.Ubuntu
+Hide.Text = "–"
+Hide.TextColor3 = Color3.fromRGB(0, 255, 21)
+Hide.TextScaled = true
+Hide.TextSize = 14.000
+Hide.TextWrapped = true
+
+UICorner.Parent = TopBar
+
+SideBar.Name = "SideBar"
+SideBar.Parent = MainFrame
+SideBar.Active = true
+SideBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SideBar.BackgroundTransparency = 1.000
+SideBar.BorderSizePixel = 0
+SideBar.Position = UDim2.new(0, 0, 0.197115391, 0)
+SideBar.Size = UDim2.new(0.144230768, 0, 0.802884519, 0)
+SideBar.ZIndex = 999999998
+SideBar.ScrollBarThickness = 6
+
+Home.Name = "Home"
+Home.Parent = SideBar
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(0, 38, 0, 38)
+Home.ZIndex = 999999998
+Home.Font = Enum.Font.SourceSans
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(0, 255, 21)
+Home.TextSize = 13.000
+Home.TextWrapped = true
+
+ListLayout.Name = "ListLayout"
+ListLayout.Parent = SideBar
+ListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Hub.Name = "Hub"
+Hub.Parent = SideBar
+Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub.BackgroundTransparency = 1.000
+Hub.BorderSizePixel = 0
+Hub.Size = UDim2.new(0, 38, 0, 38)
+Hub.ZIndex = 999999998
+Hub.Font = Enum.Font.SourceSans
+Hub.Text = "Hub"
+Hub.TextColor3 = Color3.fromRGB(0, 255, 21)
+Hub.TextSize = 13.000
+Hub.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = SideBar
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderSizePixel = 0
+Settings.Size = UDim2.new(0, 38, 0, 38)
+Settings.ZIndex = 999999998
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(0, 255, 21)
+Settings.TextSize = 13.000
+Settings.TextWrapped = true
+
+Pages.Name = "Pages"
+Pages.Parent = MainFrame
+Pages.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Pages.BackgroundTransparency = 1.000
+Pages.BorderSizePixel = 0
+Pages.ClipsDescendants = true
+Pages.Position = UDim2.new(0.144230768, 0, 0.199074239, 0)
+Pages.Size = UDim2.new(0, 265, 0, 166)
+Pages.ZIndex = 999999998
+
+Home_2.Name = "Home"
+Home_2.Parent = Pages
+Home_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BackgroundTransparency = 1.000
+Home_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BorderSizePixel = 0
+Home_2.Size = UDim2.new(1, 0, 1, 0)
+Home_2.Visible = false
+Home_2.ZIndex = 999999998
+
+Title_2.Name = "Title"
+Title_2.Parent = Home_2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0113207549, 0, 0.271084338, 0)
+Title_2.Size = UDim2.new(0, 258, 0, 29)
+Title_2.ZIndex = 999999998
+Title_2.Font = Enum.Font.SourceSansLight
+Title_2.Text = "Cash Central GUI"
+Title_2.TextColor3 = Color3.fromRGB(0, 255, 21)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Home_2
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.187668189, 0, 0.403614461, 0)
+Credits.Size = UDim2.new(0, 211, 0, 15)
+Credits.ZIndex = 999999998
+Credits.Font = Enum.Font.SourceSansLight
+Credits.Text = "Made by: luki#8505i"
+Credits.TextColor3 = Color3.fromRGB(0, 255, 21)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Hub_2.Name = "Hub"
+Hub_2.Parent = Pages
+Hub_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub_2.BackgroundTransparency = 1.000
+Hub_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Hub_2.BorderSizePixel = 0
+Hub_2.Size = UDim2.new(1, 0, 1, 0)
+Hub_2.ZIndex = 999999998
+
+ScrollingFrame.Parent = Hub_2
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.1746988, 0)
+ScrollingFrame.Size = UDim2.new(0, 266, 0, 137)
+ScrollingFrame.ZIndex = 999999998
+ScrollingFrame.ScrollBarThickness = 6
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 8)
+
+FlyScript.Name = "FlyScript"
+FlyScript.Parent = ScrollingFrame
+FlyScript.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+FlyScript.Size = UDim2.new(0, 154, 0, 36)
+FlyScript.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+FlyScript.Font = Enum.Font.SourceSans
+FlyScript.Text = "Fly"
+FlyScript.TextColor3 = Color3.fromRGB(0, 255, 59)
+FlyScript.TextSize = 14.000
+
+Title_3.Name = "Title"
+Title_3.Parent = Hub_2
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderSizePixel = 0
+Title_3.Size = UDim2.new(0, 51, 0, 23)
+Title_3.ZIndex = 999999998
+Title_3.Font = Enum.Font.SourceSansLight
+Title_3.Text = "HUB"
+Title_3.TextColor3 = Color3.fromRGB(0, 255, 21)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Pages
+Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BackgroundTransparency = 1.000
+Settings_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BorderSizePixel = 0
+Settings_2.Size = UDim2.new(1, 0, 1, 0)
+Settings_2.Visible = false
+Settings_2.ZIndex = 999999998
+
+Title_4.Name = "Title"
+Title_4.Parent = Settings_2
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Size = UDim2.new(0, 266, 0, 21)
+Title_4.ZIndex = 999999998
+Title_4.Font = Enum.Font.SourceSansLight
+Title_4.Text = "Settings"
+Title_4.TextColor3 = Color3.fromRGB(0, 255, 21)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+UICorner_2.Parent = MainFrame
+
+-- Scripts:
+
+local function FDKDF_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local v = script.Parent.Parent.Parent
+		local newPos = UDim2.new(0,0,-1,0)
+		local Play = v:TweenPosition(
+			newPos,
+			Enum.EasingDirection.In,
+			Enum.EasingStyle.Sine,
+			2,
+			true
+		)
+		wait(2)
+		v.Parent:Destroy()
+	end)
+end
+coroutine.wrap(FDKDF_fake_script)()
+local function ORXRT_fake_script() -- Hide.LocalScript 
+	local script = Instance.new('LocalScript', Hide)
+
+	-- so many references hidden here! catch em' all! ;)
+	local toggled = false
+	local beingUsed = false
+	--local v = "vandetta" -- v for vandetta reference?!?!?
+	local v = script.Parent.Parent.Parent
+	local function tweenSize(udim2)
+		local Play = v:TweenSize(
+			udim2
+		)
+	end
+	script.Parent.MouseButton1Down:Connect(function()
+		if beingUsed == false then
+			beingUsed = true
+			-- ROBLOX PZL PLZZZ PLZZZ ADD SWITCH CASES :sob::sob: :cry:
+			if toggled == false then
+				--print('close gui')
+				script.Parent.Text = "+"-- iii cant decide
+				tweenSize(UDim2.new(0, 312,0, 44))
+				wait(0.55)
+				v.Pages.Position =   UDim2.new(0.144, 0, -10000.199, -10000)
+				v.SideBar.Position = UDim2.new(0, 0, -10000.197, -10000)
+				toggled = true
+			else
+				--print('open gui')
+				script.Parent.Text = '–'-- wether to use ' or "!
+				tweenSize(UDim2.new(0, 312, 0, 208)) -- udim2 more like unity2
+				v.Pages.Position =   UDim2.new(0.144, 0, 0.199, 0)
+				v.SideBar.Position = UDim2.new(0, 0, 0.197, 0)
+				toggled = false
+				wait(1)
+			end
+			beingUsed = false
+		end
+	end)
+	-- so many references LOL
+	-- im just bored :/ writing this has been short but coming up with these has been shorter
+	-- heres a secret for reading this: i rickrolled roblox staff before
+	-- rip erik cassel
+	
+	-- open the settings tab and click the rgb button for a cooler experience!
+end
+coroutine.wrap(ORXRT_fake_script)()
+local function XKZVC_fake_script() -- Home.TextSet 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.Text = script.Parent.Name
+end
+coroutine.wrap(XKZVC_fake_script)()
+local function ZHLE_fake_script() -- Hub.TextSet 
+	local script = Instance.new('LocalScript', Hub)
+
+	script.Parent.Text = script.Parent.Name
+end
+coroutine.wrap(ZHLE_fake_script)()
+local function SRZGX_fake_script() -- Settings.TextSet 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.Text = script.Parent.Name
+end
+coroutine.wrap(SRZGX_fake_script)()
+-- FlyScript.LocalScript is disabled.
+local function HIELJCM_fake_script() -- FlyScript.Script 
+	local script = Instance.new('Script', FlyScript)
+
+	local ToggleScriptButton = script.Parent
+	local FlyScript = script.Parent.LocalScript
+	
+	ToggleScriptButton.MouseButton1Click:Connect(function()
+		FlyScript.Disabled = false
+	end)
+	
+	ToggleScriptButton.MouseButton1Click:Connect(function()
+		FlyScript.Disabled = true
+	end)
+end
+coroutine.wrap(HIELJCM_fake_script)()
+local function QCIIDV_fake_script() -- MainFrame.PageManager 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	--[[----------------------------
+	
+	Page Manager created by hovacmc
+		Version: 1b
+		Updated: 2021.04.14:4.36
+	
+	]]------------------------------
+	--[[ VARIABLES ]]--
+	local pg = script.Parent.Pages
+	local sb = script.Parent.SideBar
+	--------------------------------
+	--[[ FUNCTIONS ]]--
+	local function closePages()
+		for i,v in pairs(sb:GetChildren()) do
+			if v:IsA('TextButton') then
+				v.Open.Value = false;end
+		end
+		for i,v in pairs(pg:GetChildren()) do
+			v.Visible = true
+			local newPos = UDim2.new(0,0,-1,0)
+			local Play = v:TweenPosition(
+				newPos,
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Sine,
+				2,
+				true
+			)
+		end
+	end
+	local function quickClosePages()
+		for i,v in pairs(sb:GetChildren()) do
+			if v:IsA('TextButton') then
+				v.Open.Value = false;end
+		end
+		for i,v in pairs(pg:GetChildren()) do
+			v.Visible = true
+			local newPos = UDim2.new(0,0,-1,0)
+			v.Position = newPos
+		end
+	end
+	local function openPage(v)
+		closePages()
+		v.Visible = true
+		sb:FindFirstChild(v.Name).Open.Value = false
+		local newPos = UDim2.new(0,0,0,0)
+		local Play = v:TweenPosition(
+			newPos,
+			Enum.EasingDirection.In,
+			Enum.EasingStyle.Sine,
+			2,
+			true
+		)
+	end
+	--------------------------------
+	--[[ PAGE MANAGER ]]--
+	for i,v in pairs(sb:GetChildren()) do
+		if v:IsA('TextButton') then
+			v.Open.Value = false
+			v.Visible = true
+			v.MouseButton1Down:Connect(function()
+				openPage(pg:FindFirstChild(v.Name))
+			end)end
+	end
+	--------------------------------
+	quickClosePages()
+	openPage(pg:FindFirstChild('Home'))
+end
+coroutine.wrap(QCIIDV_fake_script)()
+local function CZECJU_fake_script() -- MainFrame.DragScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	--Credits go to whoever made this script.
+	
+	local UIS = game:GetService("UserInputService")
+	function drag (Frame)
+		dragToggle = nil
+		dragSpeed = 0.23
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	drag(script.Parent)
+	
+end
+coroutine.wrap(CZECJU_fake_script)()
