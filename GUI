@@ -28,7 +28,7 @@ local UICorner_2 = Instance.new("UICorner")
 --Properties:
 
 GUITemplate.Name = "GUITemplate"
-GUITemplate.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GUITemplate.Parent = game.CoreGui
 GUITemplate.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 GUITemplate.DisplayOrder = 999999999
 
