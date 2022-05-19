@@ -1,6 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
 -- Instances:
 
 local CashCentralGUI = Instance.new("ScreenGui")
@@ -508,7 +505,7 @@ UICorner_11.Parent = MainFrame
 
 -- Scripts:
 
-local function QTDZ_fake_script() -- Exit.LocalScript 
+local function KMHJL_fake_script() -- Exit.LocalScript 
 	local script = Instance.new('LocalScript', Exit)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -525,8 +522,8 @@ local function QTDZ_fake_script() -- Exit.LocalScript
 		v.Parent:Destroy()
 	end)
 end
-coroutine.wrap(QTDZ_fake_script)()
-local function ZRTLYIZ_fake_script() -- Hide.LocalScript 
+coroutine.wrap(KMHJL_fake_script)()
+local function XCINODM_fake_script() -- Hide.LocalScript 
 	local script = Instance.new('LocalScript', Hide)
 
 	local toggled = false
@@ -563,27 +560,27 @@ local function ZRTLYIZ_fake_script() -- Hide.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZRTLYIZ_fake_script)()
-local function QHVCE_fake_script() -- HomeBtn.TextSet 
+coroutine.wrap(XCINODM_fake_script)()
+local function UMEDX_fake_script() -- HomeBtn.TextSet 
 	local script = Instance.new('LocalScript', HomeBtn)
 
 	script.Parent.Text = script.Parent.Name
 end
-coroutine.wrap(QHVCE_fake_script)()
-local function XFYVWJ_fake_script() -- HubBtn.TextSet 
+coroutine.wrap(UMEDX_fake_script)()
+local function UZCLX_fake_script() -- HubBtn.TextSet 
 	local script = Instance.new('LocalScript', HubBtn)
 
 	script.Parent.Text = script.Parent.Name
 end
-coroutine.wrap(XFYVWJ_fake_script)()
-local function PDUHAO_fake_script() -- SettingsBtn.TextSet 
+coroutine.wrap(UZCLX_fake_script)()
+local function ZAKPZTV_fake_script() -- SettingsBtn.TextSet 
 	local script = Instance.new('LocalScript', SettingsBtn)
 
 	script.Parent.Text = script.Parent.Name
 end
-coroutine.wrap(PDUHAO_fake_script)()
+coroutine.wrap(ZAKPZTV_fake_script)()
 -- FlyScript.LocalScript is disabled.
-local function BTIP_fake_script() -- FlyScript.Script 
+local function KKHLNT_fake_script() -- FlyScript.Script 
 	local script = Instance.new('Script', FlyScript)
 
 	local ToggleScriptButton = script.Parent
@@ -597,9 +594,9 @@ local function BTIP_fake_script() -- FlyScript.Script
 		FlyScript.Disabled = true
 	end)
 end
-coroutine.wrap(BTIP_fake_script)()
+coroutine.wrap(KKHLNT_fake_script)()
 -- DropScript.LocalScript is disabled.
-local function JKHSY_fake_script() -- DropScript.Script 
+local function LAZJAGW_fake_script() -- DropScript.Script 
 	local script = Instance.new('Script', DropScript)
 
 	local ToggleScriptButton = script.Parent
@@ -613,8 +610,8 @@ local function JKHSY_fake_script() -- DropScript.Script
 		DropScript.Disabled = true
 	end)
 end
-coroutine.wrap(JKHSY_fake_script)()
-local function CGLFMX_fake_script() -- Holder.Main Handler 
+coroutine.wrap(LAZJAGW_fake_script)()
+local function BUKEH_fake_script() -- Holder.Main Handler 
 	local script = Instance.new('LocalScript', Holder)
 
 	local TweenService = game:GetService("TweenService")
@@ -680,8 +677,8 @@ local function CGLFMX_fake_script() -- Holder.Main Handler
 		end
 	end)
 end
-coroutine.wrap(CGLFMX_fake_script)()
-local function WVCJR_fake_script() -- Holder_2.Main Handler 
+coroutine.wrap(BUKEH_fake_script)()
+local function JPAEZB_fake_script() -- Holder_2.Main Handler 
 	local script = Instance.new('LocalScript', Holder_2)
 
 	local TweenService = game:GetService("TweenService")
@@ -747,8 +744,8 @@ local function WVCJR_fake_script() -- Holder_2.Main Handler
 		end
 	end)
 end
-coroutine.wrap(WVCJR_fake_script)()
-local function WWUAH_fake_script() -- Holder_3.Main Handler 
+coroutine.wrap(JPAEZB_fake_script)()
+local function BQHFQQE_fake_script() -- Holder_3.Main Handler 
 	local script = Instance.new('LocalScript', Holder_3)
 
 	local TweenService = game:GetService("TweenService")
@@ -814,8 +811,8 @@ local function WWUAH_fake_script() -- Holder_3.Main Handler
 		end
 	end)
 end
-coroutine.wrap(WWUAH_fake_script)()
-local function UCSTWW_fake_script() -- MainFrame.DragScript 
+coroutine.wrap(BQHFQQE_fake_script)()
+local function BLZABIR_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	--Credits go to whoever made this script.
@@ -858,8 +855,8 @@ local function UCSTWW_fake_script() -- MainFrame.DragScript
 	drag(script.Parent)
 	
 end
-coroutine.wrap(UCSTWW_fake_script)()
-local function ZSWIVP_fake_script() -- MainFrame.Pages 
+coroutine.wrap(BLZABIR_fake_script)()
+local function QCUYHQ_fake_script() -- MainFrame.Pages 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Variables
@@ -893,8 +890,8 @@ local function ZSWIVP_fake_script() -- MainFrame.Pages
 		HomeGUI.Visible = false
 	end)
 end
-coroutine.wrap(ZSWIVP_fake_script)()
-local function GHKEWL_fake_script() -- CashCentralGUI.LocalScript 
+coroutine.wrap(QCUYHQ_fake_script)()
+local function JSGYFP_fake_script() -- CashCentralGUI.LocalScript 
 	local script = Instance.new('LocalScript', CashCentralGUI)
 
 	local FrameObject = script.Parent.MainFrame
@@ -904,4 +901,4 @@ local function GHKEWL_fake_script() -- CashCentralGUI.LocalScript
 	
 	
 end
-coroutine.wrap(GHKEWL_fake_script)()
+coroutine.wrap(JSGYFP_fake_script)()
