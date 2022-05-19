@@ -1,7 +1,9 @@
--- Made By Luki <3
+-- Gui to Lua
+-- Version: 3.2
+
 -- Instances:
 
-local GUITemplate = Instance.new("ScreenGui")
+local CashCentralGUI = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local TopBar = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -21,22 +23,51 @@ local Hub = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
 local FlyScript = Instance.new("TextButton")
+local DropScript = Instance.new("TextButton")
 local Title_3 = Instance.new("TextLabel")
 local Settings = Instance.new("Frame")
 local Title_4 = Instance.new("TextLabel")
+local Holder = Instance.new("Frame")
+local Circle = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
+local Mini = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local UIPadding = Instance.new("UIPadding")
+local Button = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Holder_2 = Instance.new("Frame")
+local Circle_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Mini_2 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local UIPadding_2 = Instance.new("UIPadding")
+local Button_2 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Holder_3 = Instance.new("Frame")
+local Circle_3 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Mini_3 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+local UIPadding_3 = Instance.new("UIPadding")
+local Button_3 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
 
 --Properties:
 
-GUITemplate.Name = "GUITemplate"
-GUITemplate.Parent = game.CoreGui
-GUITemplate.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-GUITemplate.DisplayOrder = 999999999
+CashCentralGUI.Name = "CashCentralGUI"
+CashCentralGUI.Parent = game.CoreGui
+CashCentralGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CashCentralGUI.DisplayOrder = 999999999
 
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = GUITemplate
+MainFrame.Parent = CashCentralGUI
 MainFrame.Active = true
-MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 MainFrame.BackgroundTransparency = 0.100
 MainFrame.BorderColor3 = Color3.fromRGB(0, 255, 17)
 MainFrame.BorderSizePixel = 0
@@ -48,7 +79,7 @@ MainFrame.ZIndex = 999999998
 
 TopBar.Name = "TopBar"
 TopBar.Parent = MainFrame
-TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TopBar.BorderColor3 = Color3.fromRGB(255, 0, 4)
 TopBar.BorderSizePixel = 0
 TopBar.Position = UDim2.new(-0.000217975714, 0, -0.000925724336, 0)
@@ -176,6 +207,7 @@ Home.BackgroundTransparency = 1.000
 Home.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Home.BorderSizePixel = 0
 Home.Size = UDim2.new(1, 0, 1, 0)
+Home.Visible = false
 Home.ZIndex = 999999998
 
 Title_2.Name = "Title"
@@ -215,7 +247,6 @@ Hub.BackgroundTransparency = 1.000
 Hub.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Hub.BorderSizePixel = 0
 Hub.Size = UDim2.new(1, 0, 1, 0)
-Hub.Visible = false
 Hub.ZIndex = 999999998
 
 ScrollingFrame.Parent = Hub
@@ -236,11 +267,21 @@ FlyScript.Name = "FlyScript"
 FlyScript.Parent = ScrollingFrame
 FlyScript.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
 FlyScript.Size = UDim2.new(0, 154, 0, 36)
-FlyScript.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+FlyScript.Style = Enum.ButtonStyle.RobloxButton
 FlyScript.Font = Enum.Font.SourceSans
 FlyScript.Text = "Fly"
 FlyScript.TextColor3 = Color3.fromRGB(0, 255, 59)
 FlyScript.TextSize = 14.000
+
+DropScript.Name = "DropScript"
+DropScript.Parent = ScrollingFrame
+DropScript.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+DropScript.Size = UDim2.new(0, 154, 0, 36)
+DropScript.Style = Enum.ButtonStyle.RobloxButton
+DropScript.Font = Enum.Font.SourceSans
+DropScript.Text = "AutoDrop"
+DropScript.TextColor3 = Color3.fromRGB(0, 255, 59)
+DropScript.TextSize = 14.000
 
 Title_3.Name = "Title"
 Title_3.Parent = Hub
@@ -279,11 +320,195 @@ Title_4.TextScaled = true
 Title_4.TextSize = 14.000
 Title_4.TextWrapped = true
 
-UICorner_2.Parent = MainFrame
+Holder.Name = "Holder"
+Holder.Parent = Settings
+Holder.AnchorPoint = Vector2.new(0.5, 0.5)
+Holder.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0.158490568, 0, 0.301762402, 0)
+Holder.Size = UDim2.new(0.169353917, 0, 0.150602385, 0)
+
+Circle.Name = "Circle"
+Circle.Parent = Holder
+Circle.AnchorPoint = Vector2.new(0, 0.5)
+Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle.Position = UDim2.new(0, 0, 0.5, 0)
+Circle.Size = UDim2.new(0.5, 0, 1, 0)
+
+UICorner_2.CornerRadius = UDim.new(0, 100)
+UICorner_2.Parent = Circle
+
+Mini.Name = "Mini"
+Mini.Parent = Circle
+Mini.AnchorPoint = Vector2.new(0.5, 0.5)
+Mini.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Mini.Position = UDim2.new(0.5, 0, 0.5, 0)
+Mini.Size = UDim2.new(0.5, 0, 0.5, 0)
+
+UICorner_3.CornerRadius = UDim.new(0, 100)
+UICorner_3.Parent = Mini
+
+UICorner_4.CornerRadius = UDim.new(0, 100)
+UICorner_4.Parent = Holder
+
+UIPadding.Parent = Holder
+UIPadding.PaddingBottom = UDim.new(0, 4)
+UIPadding.PaddingLeft = UDim.new(0, 4)
+UIPadding.PaddingRight = UDim.new(0, 4)
+UIPadding.PaddingTop = UDim.new(0, 4)
+
+Button.Name = "Button"
+Button.Parent = Holder
+Button.AnchorPoint = Vector2.new(0.5, 0.5)
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.BackgroundTransparency = 1.000
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.5, 0, 0.5, 0)
+Button.Size = UDim2.new(1.10000002, 0, 1.25, 0)
+Button.Font = Enum.Font.SourceSans
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+
+TextLabel.Parent = Holder
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(1.59983563, 0, -0.235294163, 0)
+TextLabel.Size = UDim2.new(0, 147, 0, 25)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 21)
+TextLabel.TextSize = 14.000
+
+UIListLayout_2.Parent = Settings
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 8)
+
+Holder_2.Name = "Holder"
+Holder_2.Parent = Settings
+Holder_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Holder_2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Holder_2.BorderSizePixel = 0
+Holder_2.Position = UDim2.new(0.158490568, 0, 0.301762402, 0)
+Holder_2.Size = UDim2.new(0.169353917, 0, 0.150602385, 0)
+
+Circle_2.Name = "Circle"
+Circle_2.Parent = Holder_2
+Circle_2.AnchorPoint = Vector2.new(0, 0.5)
+Circle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_2.Position = UDim2.new(0, 0, 0.5, 0)
+Circle_2.Size = UDim2.new(0.5, 0, 1, 0)
+
+UICorner_5.CornerRadius = UDim.new(0, 100)
+UICorner_5.Parent = Circle_2
+
+Mini_2.Name = "Mini"
+Mini_2.Parent = Circle_2
+Mini_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Mini_2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Mini_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Mini_2.Size = UDim2.new(0.5, 0, 0.5, 0)
+
+UICorner_6.CornerRadius = UDim.new(0, 100)
+UICorner_6.Parent = Mini_2
+
+UICorner_7.CornerRadius = UDim.new(0, 100)
+UICorner_7.Parent = Holder_2
+
+UIPadding_2.Parent = Holder_2
+UIPadding_2.PaddingBottom = UDim.new(0, 4)
+UIPadding_2.PaddingLeft = UDim.new(0, 4)
+UIPadding_2.PaddingRight = UDim.new(0, 4)
+UIPadding_2.PaddingTop = UDim.new(0, 4)
+
+Button_2.Name = "Button"
+Button_2.Parent = Holder_2
+Button_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.BackgroundTransparency = 1.000
+Button_2.BorderSizePixel = 0
+Button_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Button_2.Size = UDim2.new(1.10000002, 0, 1.25, 0)
+Button_2.Font = Enum.Font.SourceSans
+Button_2.Text = ""
+Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.TextSize = 14.000
+
+TextLabel_2.Parent = Holder_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(1.59983563, 0, -0.235294163, 0)
+TextLabel_2.Size = UDim2.new(0, 147, 0, 25)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 255, 21)
+TextLabel_2.TextSize = 14.000
+
+Holder_3.Name = "Holder"
+Holder_3.Parent = Settings
+Holder_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Holder_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Holder_3.BorderSizePixel = 0
+Holder_3.Position = UDim2.new(0.158490568, 0, 0.301762402, 0)
+Holder_3.Size = UDim2.new(0.169353917, 0, 0.150602385, 0)
+
+Circle_3.Name = "Circle"
+Circle_3.Parent = Holder_3
+Circle_3.AnchorPoint = Vector2.new(0, 0.5)
+Circle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_3.Position = UDim2.new(0, 0, 0.5, 0)
+Circle_3.Size = UDim2.new(0.5, 0, 1, 0)
+
+UICorner_8.CornerRadius = UDim.new(0, 100)
+UICorner_8.Parent = Circle_3
+
+Mini_3.Name = "Mini"
+Mini_3.Parent = Circle_3
+Mini_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Mini_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Mini_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Mini_3.Size = UDim2.new(0.5, 0, 0.5, 0)
+
+UICorner_9.CornerRadius = UDim.new(0, 100)
+UICorner_9.Parent = Mini_3
+
+UICorner_10.CornerRadius = UDim.new(0, 100)
+UICorner_10.Parent = Holder_3
+
+UIPadding_3.Parent = Holder_3
+UIPadding_3.PaddingBottom = UDim.new(0, 4)
+UIPadding_3.PaddingLeft = UDim.new(0, 4)
+UIPadding_3.PaddingRight = UDim.new(0, 4)
+UIPadding_3.PaddingTop = UDim.new(0, 4)
+
+Button_3.Name = "Button"
+Button_3.Parent = Holder_3
+Button_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Button_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_3.BackgroundTransparency = 1.000
+Button_3.BorderSizePixel = 0
+Button_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Button_3.Size = UDim2.new(1.10000002, 0, 1.25, 0)
+Button_3.Font = Enum.Font.SourceSans
+Button_3.Text = ""
+Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.TextSize = 14.000
+
+TextLabel_3.Parent = Holder_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(1.59983563, 0, -0.235294163, 0)
+TextLabel_3.Size = UDim2.new(0, 147, 0, 25)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 255, 21)
+TextLabel_3.TextSize = 14.000
+
+UICorner_11.Parent = MainFrame
 
 -- Scripts:
 
-local function GJAMQ_fake_script() -- Exit.LocalScript 
+local function QTDZ_fake_script() -- Exit.LocalScript 
 	local script = Instance.new('LocalScript', Exit)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -300,8 +525,8 @@ local function GJAMQ_fake_script() -- Exit.LocalScript
 		v.Parent:Destroy()
 	end)
 end
-coroutine.wrap(GJAMQ_fake_script)()
-local function UIDRT_fake_script() -- Hide.LocalScript 
+coroutine.wrap(QTDZ_fake_script)()
+local function ZRTLYIZ_fake_script() -- Hide.LocalScript 
 	local script = Instance.new('LocalScript', Hide)
 
 	local toggled = false
@@ -338,27 +563,27 @@ local function UIDRT_fake_script() -- Hide.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UIDRT_fake_script)()
-local function MWUKZ_fake_script() -- HomeBtn.TextSet 
+coroutine.wrap(ZRTLYIZ_fake_script)()
+local function QHVCE_fake_script() -- HomeBtn.TextSet 
 	local script = Instance.new('LocalScript', HomeBtn)
 
 	script.Parent.Text = script.Parent.Name
 end
-coroutine.wrap(MWUKZ_fake_script)()
-local function YLVFXG_fake_script() -- HubBtn.TextSet 
+coroutine.wrap(QHVCE_fake_script)()
+local function XFYVWJ_fake_script() -- HubBtn.TextSet 
 	local script = Instance.new('LocalScript', HubBtn)
 
 	script.Parent.Text = script.Parent.Name
 end
-coroutine.wrap(YLVFXG_fake_script)()
-local function JOMQ_fake_script() -- SettingsBtn.TextSet 
+coroutine.wrap(XFYVWJ_fake_script)()
+local function PDUHAO_fake_script() -- SettingsBtn.TextSet 
 	local script = Instance.new('LocalScript', SettingsBtn)
 
 	script.Parent.Text = script.Parent.Name
 end
-coroutine.wrap(JOMQ_fake_script)()
+coroutine.wrap(PDUHAO_fake_script)()
 -- FlyScript.LocalScript is disabled.
-local function UFEAWYJ_fake_script() -- FlyScript.Script 
+local function BTIP_fake_script() -- FlyScript.Script 
 	local script = Instance.new('Script', FlyScript)
 
 	local ToggleScriptButton = script.Parent
@@ -372,8 +597,225 @@ local function UFEAWYJ_fake_script() -- FlyScript.Script
 		FlyScript.Disabled = true
 	end)
 end
-coroutine.wrap(UFEAWYJ_fake_script)()
-local function LWIKNA_fake_script() -- MainFrame.DragScript 
+coroutine.wrap(BTIP_fake_script)()
+-- DropScript.LocalScript is disabled.
+local function JKHSY_fake_script() -- DropScript.Script 
+	local script = Instance.new('Script', DropScript)
+
+	local ToggleScriptButton = script.Parent
+	local DropScript = script.Parent.LocalScript
+	
+	ToggleScriptButton.MouseButton1Click:Connect(function()
+		DropScript.Disabled = false
+	end)
+	
+	ToggleScriptButton.MouseButton1Click:Connect(function()
+		DropScript.Disabled = true
+	end)
+end
+coroutine.wrap(JKHSY_fake_script)()
+local function CGLFMX_fake_script() -- Holder.Main Handler 
+	local script = Instance.new('LocalScript', Holder)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local Holder = script.Parent
+	local Circle = Holder:WaitForChild("Circle")
+	local Mini = Circle:WaitForChild("Mini")
+	
+	local Button = Holder:WaitForChild("Button")
+	
+	local function setToggle(request)
+		local Duration = 0.25
+		local Style = Enum.EasingStyle.Sine
+		local Direction = Enum.EasingDirection.Out
+		local RepeatCount = 0
+		local Reverse = false
+		local TweenDelay = 0
+		local AnimateInfo = TweenInfo.new(Duration, Style, Direction, RepeatCount, Reverse, TweenDelay)
+		
+		if request == true then
+			local Holder_Open = TweenService:Create(Holder, AnimateInfo, {BackgroundColor3 = Color3.new(0, 0.847059, 0.337255)})
+			local Circle_Open = TweenService:Create(Circle, AnimateInfo, {Position = UDim2.new(1, 0, 0.5, 0), AnchorPoint = Vector2.new(1, 0.5)})
+			local Mini_Open = TweenService:Create(Mini, AnimateInfo, {BackgroundColor3 = Color3.new(1, 1, 1)})
+			
+			Holder_Open:Play()
+			Circle_Open:Play()
+			Mini_Open:Play()
+		elseif request == false then
+			local Holder_Close = TweenService:Create(Holder, AnimateInfo, {BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)})
+			local Circle_Close = TweenService:Create(Circle, AnimateInfo, {Position = UDim2.new(0, 0, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5)})
+			local Mini_Close = TweenService:Create(Mini, AnimateInfo, {BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)})
+			
+			Holder_Close:Play()
+			Circle_Close:Play()
+			Mini_Close:Play()
+		else
+			warn("Wrong request.")
+		end
+	end
+	
+	
+	local Cooldown = false
+	local isOpen = false
+	Button.MouseButton1Click:Connect(function()
+		if not Cooldown then
+			Cooldown = true
+			
+			if not isOpen then
+				setToggle(true)
+				
+				
+				isOpen = true
+			else
+				setToggle(false)
+				--Logic here
+				
+				isOpen = false
+			end
+			
+			
+			wait(1) -- Wait n Seconds till the animation will proceed
+			Cooldown = false
+		end
+	end)
+end
+coroutine.wrap(CGLFMX_fake_script)()
+local function WVCJR_fake_script() -- Holder_2.Main Handler 
+	local script = Instance.new('LocalScript', Holder_2)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local Holder = script.Parent
+	local Circle = Holder:WaitForChild("Circle")
+	local Mini = Circle:WaitForChild("Mini")
+	
+	local Button = Holder:WaitForChild("Button")
+	
+	local function setToggle(request)
+		local Duration = 0.25
+		local Style = Enum.EasingStyle.Sine
+		local Direction = Enum.EasingDirection.Out
+		local RepeatCount = 0
+		local Reverse = false
+		local TweenDelay = 0
+		local AnimateInfo = TweenInfo.new(Duration, Style, Direction, RepeatCount, Reverse, TweenDelay)
+		
+		if request == true then
+			local Holder_Open = TweenService:Create(Holder, AnimateInfo, {BackgroundColor3 = Color3.new(0, 0.847059, 0.337255)})
+			local Circle_Open = TweenService:Create(Circle, AnimateInfo, {Position = UDim2.new(1, 0, 0.5, 0), AnchorPoint = Vector2.new(1, 0.5)})
+			local Mini_Open = TweenService:Create(Mini, AnimateInfo, {BackgroundColor3 = Color3.new(1, 1, 1)})
+			
+			Holder_Open:Play()
+			Circle_Open:Play()
+			Mini_Open:Play()
+		elseif request == false then
+			local Holder_Close = TweenService:Create(Holder, AnimateInfo, {BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)})
+			local Circle_Close = TweenService:Create(Circle, AnimateInfo, {Position = UDim2.new(0, 0, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5)})
+			local Mini_Close = TweenService:Create(Mini, AnimateInfo, {BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)})
+			
+			Holder_Close:Play()
+			Circle_Close:Play()
+			Mini_Close:Play()
+		else
+			warn("Wrong request.")
+		end
+	end
+	
+	
+	local Cooldown = false
+	local isOpen = false
+	Button.MouseButton1Click:Connect(function()
+		if not Cooldown then
+			Cooldown = true
+			
+			if not isOpen then
+				setToggle(true)
+				-- Logic here
+				
+				isOpen = true
+			else
+				setToggle(false)
+				--Logic here
+				
+				isOpen = false
+			end
+			
+			
+			wait(1) -- Wait n Seconds till the animation will proceed
+			Cooldown = false
+		end
+	end)
+end
+coroutine.wrap(WVCJR_fake_script)()
+local function WWUAH_fake_script() -- Holder_3.Main Handler 
+	local script = Instance.new('LocalScript', Holder_3)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local Holder = script.Parent
+	local Circle = Holder:WaitForChild("Circle")
+	local Mini = Circle:WaitForChild("Mini")
+	
+	local Button = Holder:WaitForChild("Button")
+	
+	local function setToggle(request)
+		local Duration = 0.25
+		local Style = Enum.EasingStyle.Sine
+		local Direction = Enum.EasingDirection.Out
+		local RepeatCount = 0
+		local Reverse = false
+		local TweenDelay = 0
+		local AnimateInfo = TweenInfo.new(Duration, Style, Direction, RepeatCount, Reverse, TweenDelay)
+		
+		if request == true then
+			local Holder_Open = TweenService:Create(Holder, AnimateInfo, {BackgroundColor3 = Color3.new(0, 0.847059, 0.337255)})
+			local Circle_Open = TweenService:Create(Circle, AnimateInfo, {Position = UDim2.new(1, 0, 0.5, 0), AnchorPoint = Vector2.new(1, 0.5)})
+			local Mini_Open = TweenService:Create(Mini, AnimateInfo, {BackgroundColor3 = Color3.new(1, 1, 1)})
+			
+			Holder_Open:Play()
+			Circle_Open:Play()
+			Mini_Open:Play()
+		elseif request == false then
+			local Holder_Close = TweenService:Create(Holder, AnimateInfo, {BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)})
+			local Circle_Close = TweenService:Create(Circle, AnimateInfo, {Position = UDim2.new(0, 0, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5)})
+			local Mini_Close = TweenService:Create(Mini, AnimateInfo, {BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)})
+			
+			Holder_Close:Play()
+			Circle_Close:Play()
+			Mini_Close:Play()
+		else
+			warn("Wrong request.")
+		end
+	end
+	
+	
+	local Cooldown = false
+	local isOpen = false
+	Button.MouseButton1Click:Connect(function()
+		if not Cooldown then
+			Cooldown = true
+			
+			if not isOpen then
+				setToggle(true)
+				-- Logic here
+				
+				isOpen = true
+			else
+				setToggle(false)
+				--Logic here
+				
+				isOpen = false
+			end
+			
+			
+			wait(1) -- Wait n Seconds till the animation will proceed
+			Cooldown = false
+		end
+	end)
+end
+coroutine.wrap(WWUAH_fake_script)()
+local function UCSTWW_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	--Credits go to whoever made this script.
@@ -416,8 +858,8 @@ local function LWIKNA_fake_script() -- MainFrame.DragScript
 	drag(script.Parent)
 	
 end
-coroutine.wrap(LWIKNA_fake_script)()
-local function TCRHF_fake_script() -- MainFrame.Pages 
+coroutine.wrap(UCSTWW_fake_script)()
+local function ZSWIVP_fake_script() -- MainFrame.Pages 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Variables
@@ -451,4 +893,15 @@ local function TCRHF_fake_script() -- MainFrame.Pages
 		HomeGUI.Visible = false
 	end)
 end
-coroutine.wrap(TCRHF_fake_script)()
+coroutine.wrap(ZSWIVP_fake_script)()
+local function GHKEWL_fake_script() -- CashCentralGUI.LocalScript 
+	local script = Instance.new('LocalScript', CashCentralGUI)
+
+	local FrameObject = script.Parent.MainFrame
+	local Open = false
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	
+end
+coroutine.wrap(GHKEWL_fake_script)()
